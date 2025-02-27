@@ -10,7 +10,7 @@ int main() {
     // Find and print words that start with 'e'
     cout << "Words starting with 'e':" << endl;
     for (int i = 0; i < 1000; i++) {
-        if (words[i][0] == 'e' || words[i][0] == 'E') {
+        if (words[i][0] == 'e' ) {
             cout << words[i] << endl;
         }
     }
@@ -20,7 +20,7 @@ int main() {
     
     cout << "Words starting with 'h':" << endl;
     for (int i = 0; i < 1000; i++) {
-        if (words[i][0] == 'h' || words[i][0] == 'H') {
+        if (words[i][0] == 'h' ) {
             cout << words[i] << endl;
         }
     }
@@ -30,7 +30,7 @@ int main() {
     
     cout << "Words starting with 'a':" << endl;
     for (int i = 0; i < 1000; i++) {
-        if (words[i][0] == 'a' || words[i][0] == 'A') {
+        if (words[i][0] == 'a') {
             cout << words[i] << endl;
         }
     }
