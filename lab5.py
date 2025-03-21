@@ -4,8 +4,7 @@ passwords = []
 for _ in range(5):
     password = ''.join(random.choices(string.ascii_lowercase, k=15))
     passwords.append(password)
-    import random
-    import string
+    
 
     dict = {}
     letters = random.sample(string.ascii_lowercase, 5)
