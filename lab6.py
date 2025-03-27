@@ -27,18 +27,25 @@ x=int(input("enter x"))
 n=int(input("enter n"))
 print(sine_x(x,n))
 
+result = 0.0
+
+result = 0.0
+
 def recfunc(n):
-    """Your function should take “n” as a parameter but returns nothing."""
-    reslt=0
+    """
+    Your function should take “n” as a parameter
+    """
+    global result
+    if n == 0:
+        print("The harmonic sum is:", result)
+        return
+    result += 1 / n
+    recfunc(n - 1)
 
-    for i in range(n):
-        reslt +=1/n
-        n-=1
-    print(reslt)
-
-
-n=int(input("enter n"))
-print(recfunc(n))
+n = int(input("Enter n: "))
+recfunc(n)
 
 print(recfunc.__doc__)
+
+
 
